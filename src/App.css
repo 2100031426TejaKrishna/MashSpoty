@@ -1,0 +1,15 @@
+.homepage-container {
+  display: flex;
+}
+
+.content-container {
+  margin-left: 200px; 
+  transition: margin-left 0.3s; 
+  overflow-y: auto; 
+
+}
+
+.content-container.collapsed {
+  margin-left: 60px; 
+}
+

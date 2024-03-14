@@ -1,0 +1,60 @@
+.bottom-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px; /* Adjust width for open state */
+    background-color: rgba(0, 0, 0, 5); /* Correct alpha value */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adjust top padding for better alignment */
+    transition: width 0.3s; /* Add transition effect for smooth width change */
+  }
+  
+  
+  .bottom-nav.collapsed {
+    width: 60px; /* Adjust width for collapsed state */
+  }
+  
+  .bottom-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px; /* Adjust margin for spacing between buttons */
+    display: flex;
+    align-items: center; /* Align text and icons vertically */
+  }
+  
+  .bottom-nav a.active {
+    color: #ff5722;
+  }
+  
+  .bottom-nav button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 15px; /* Adjust padding for a larger button */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px; /* Add rounded borders */
+  }
+  
+  .bottom-nav button:hover {
+    background-color: #e64a19;
+  }
+  
+  .toggle-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  
+  .nav-text {
+    margin-left: 10px; 
+  }
+  

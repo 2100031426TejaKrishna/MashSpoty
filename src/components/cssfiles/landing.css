@@ -1,0 +1,134 @@
+/* src/components/LandingPage.css */
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .content {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 5); /* Corrected typo in rgba value */
+    border-radius: 20px;
+    width: 550px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .get-started-button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #326ba8;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Added rounded borders to the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #19e6df;
+  }
+  
+  /* src/styles/NavigationBar.css */
+  
+  .bottom-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px; /* Adjust width for open state */
+    background-color: rgba(0, 0, 0, 5); /* Correct alpha value */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adjust top padding for better alignment */
+    transition: width 0.3s; /* Add transition effect for smooth width change */
+  }
+  
+  
+  .bottom-nav.collapsed {
+    width: 60px; /* Adjust width for collapsed state */
+  }
+  
+  .bottom-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px; /* Adjust margin for spacing between buttons */
+    display: flex;
+    align-items: center; /* Align text and icons vertically */
+  }
+  
+  .bottom-nav a.active {
+    color: #ff5722;
+  }
+  
+  .bottom-nav button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 15px; /* Adjust padding for a larger button */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px; /* Add rounded borders */
+  }
+  
+  .bottom-nav button:hover {
+    background-color: #e64a19;
+  }
+  
+  .toggle-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  
+  .nav-text {
+    margin-left: 10px; 
+  }
+
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure it appears on top of other elements */
+  }
+  
+  .loader img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+  }
+  
